@@ -1,8 +1,8 @@
 venv/
+.git/
+.gitignore
 __pycache__/
 *.pyc
 db.sqlite3
-.env
 .idea/
-password.py
-password_reset_report.xlsx
+.env

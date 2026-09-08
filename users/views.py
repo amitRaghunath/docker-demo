@@ -33,6 +33,7 @@ class UserViewSet(ModelViewSet):
         users = User.objects.all()
 
         serializer = UserSerializer(users, many=True)
+        print("Local changes Done", flush=True)
 
         return Response(
             serializer.data,
