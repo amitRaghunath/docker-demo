@@ -44,3 +44,6 @@ jobs:
 
       - name: Run tests
         run: python manage.py test
+
+      - name: Build Docker image
+        run: docker build -t docker-demo-backend:ci .
