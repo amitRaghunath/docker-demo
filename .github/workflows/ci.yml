@@ -52,4 +52,7 @@ jobs:
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       - name: Build Docker image
-        run: docker build -t docker-demo-backend:ci .
+        run: docker build -t amitraghunath/docker-demo-backend:ci .
+
+      - name: Push Docker image
+        run: docker push amitraghunath/docker-demo-backend:ci
